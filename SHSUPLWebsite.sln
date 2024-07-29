@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHSUPLWebsite", "SHSUPLWebsite\SHSUPLWebsite.csproj", "{87011E11-3CB7-4660-893D-D4BDEAF40A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHSUPLWebsite.Client", "SHSUPLWebsite.Client\SHSUPLWebsite.Client.csproj", "{F15CE24D-39F8-4852-826C-76FCCD7FC745}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87011E11-3CB7-4660-893D-D4BDEAF40A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87011E11-3CB7-4660-893D-D4BDEAF40A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87011E11-3CB7-4660-893D-D4BDEAF40A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87011E11-3CB7-4660-893D-D4BDEAF40A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15CE24D-39F8-4852-826C-76FCCD7FC745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15CE24D-39F8-4852-826C-76FCCD7FC745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15CE24D-39F8-4852-826C-76FCCD7FC745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15CE24D-39F8-4852-826C-76FCCD7FC745}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C6402A2-4438-4119-A200-EE2A6563E2D4}
+	EndGlobalSection
+EndGlobal

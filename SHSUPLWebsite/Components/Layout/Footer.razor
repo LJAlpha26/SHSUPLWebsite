@@ -1,0 +1,134 @@
+﻿@*
+
+    Footer found at the bottom of every webpage.
+    Something to note is that this is not fixed to the top of
+    the page lije the header, but is at the bottom and scrolled to.
+
+*@
+
+@inject IJSRuntime JsRuntime
+
+
+<div id="line-2"/>  <!-- Horizontally spanning gradient line -->
+<br/>
+
+<table style="margin-left:50px; width:97%">
+
+    <tr>
+
+        @* Address portion *@
+        <td style="vertical-align: text-top; width:22%">
+            
+            
+            <u>ADDRESS:</u>
+            <br />
+            <br />
+
+            <a href="#" class="address">
+                <text>Sam Houston Recreational Center</text>
+                <br />
+                <text>801 Bowers Blvd #162</text>
+                <br />
+                <text>Huntsville, TX 77340</text>
+            </a>
+
+        </td>
+
+        @* Hours of operation portion *@
+        <td style="vertical-align: text-top; width:25%">
+
+            <u>HOURS:</u>
+            <br />
+            <br />
+
+            <table>
+                <tr>
+                    <td style="width:50%">
+                        <text>5pm - 9pm</text> <br />
+                        <text>5pm - 9pm</text> <br />
+                        <text>12pm - 5pm</text> <br />
+                        <text>CLOSED</text>
+                    </td>
+                    <td class="o-text" style="width:50%">
+                        <text>Tues. and Thurs.</text> <br />
+                        <text>Friday (as needed)</text> <br />
+                        <text>Saturday</text> <br />
+                        <text>Sun., Mon., and Wed.</text> <br />
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+
+        @* Info Icons portion *@
+        <td style="width:20%">
+
+            <table class="w-100">
+                <tr>
+
+                    <td style="width:25%">
+                        <a href="#" class="icon" >
+                            <img 
+                                src="/Images/Icons/Institution.svg" 
+                                title="Institution Homepage"    
+                            />
+                        </a>
+                    </td>
+
+                    <td style="width:25%">
+                        <a href="#">
+                            <img 
+                                src="/Images/Icons/Instagram.svg" 
+                                title="Our Instagram"    
+                            />
+                        </a>
+                    </td>
+
+                    <td style="width:25%">
+                        <a href="#">
+                            <img 
+                                src="/Images/Icons/Email.svg" 
+                                title="Email us"    
+                            />
+                        </a>
+                    </td>
+
+                    <td style="width:25%">
+                        <a href="#">
+                            <img 
+                                src="/Images/Icons/Snapchat.svg" 
+                                title="Our Snapchat"    
+                            />
+                        </a>
+                    </td>  
+                    
+                </tr>
+            </table>
+
+        </td>
+
+        @* Miscellanious portion *@
+        <td style="width:13%; text-align-last:center">
+
+            <a href="" class="to-top" @onclick=ToTop> <b>BACK TO TOP</b> </a>
+            <br />
+            <br />
+            <text class="est">Proudly Est. 2003</text>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<br />
+
+
+@code {
+
+    private async void ToTop()
+    {
+        await JsRuntime.InvokeVoidAsync("BackToTop");
+    }
+
+}

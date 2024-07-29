@@ -1,0 +1,51 @@
+/* General styling such as text on the webpages */
+html, body {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: inherit;
+        transition: opacity 0.3s;
+        opacity: 0.5;
+    }
+
+.o-text {
+    color: #f87401;
+}
+
+/* Styling for the header and footer component */
+/* ============================ */
+.logo {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.header-section {
+    width: 12%;
+    text-align: center;
+}
+
+#line-1 {
+    margin-bottom:20px;
+    height: 10px;
+    width: 90%;
+    background-color: white;    /* for browsers that do not support gradients */
+    background-image: linear-gradient(to right, white, black);
+}
+
+#line-2 {
+    margin-top: 20px;
+    height: 10px;
+    margin-left: 10%; /* Offsets to right to meet edge of page */
+    width: 90%;
+    background-color: white; /* for browsers that do not support gradients */
+    background-image: linear-gradient(to left, white, black);
+}
+/* ============================ */

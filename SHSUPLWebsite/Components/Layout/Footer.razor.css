@@ -1,0 +1,23 @@
+﻿
+.address:hover {opacity:1;}     /* Overwrites button fade out */
+
+.icon:hover {
+    transition: opacity 0s;
+    opacity: 0.7;
+    filter: invert(60%) sepia(59%) saturate(4081%) hue-rotate(358deg) brightness(94%) contrast(107%);
+}
+
+.to-top {
+    opacity: 0.4;
+}
+
+.to-top:hover {
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.est {
+    color: #f87401;
+    font-family: 'Brush Script MT', cursive;
+    font-size: xx-large;
+}
