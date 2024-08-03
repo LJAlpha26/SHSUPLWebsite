@@ -12,12 +12,13 @@
 }
 
 .to-top:hover {
+    cursor: pointer;
     transition: opacity 0.3s;
     opacity: 1;
 }
 
 .est {
     color: #f87401;
-    font-family: 'Brush Script MT', cursive;
-    font-size: xx-large;
+    font-family: Impact;
+    font-size: 30px;
 }

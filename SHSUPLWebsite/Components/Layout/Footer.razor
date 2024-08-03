@@ -2,7 +2,7 @@
 
     Footer found at the bottom of every webpage.
     Something to note is that this is not fixed to the top of
-    the page lije the header, but is at the bottom and scrolled to.
+    the page like the header, but is at the bottom and scrolled to.
 
 *@
 
@@ -17,14 +17,14 @@
     <tr>
 
         @* Address portion *@
-        <td style="vertical-align: text-top; width:22%">
+        <td style="vertical-align: text-top; width:19vw">
             
             
             <u>ADDRESS:</u>
             <br />
             <br />
 
-            <a href="#" class="address">
+            <a href="@ADDRESS_LINK" target="_blank" class="address">
                 <text>Sam Houston Recreational Center</text>
                 <br />
                 <text>801 Bowers Blvd #162</text>
@@ -35,7 +35,7 @@
         </td>
 
         @* Hours of operation portion *@
-        <td style="vertical-align: text-top; width:25%">
+        <td style="vertical-align: text-top; width:25vw">
 
             <u>HOURS:</u>
             <br />
@@ -61,13 +61,13 @@
         </td>
 
         @* Info Icons portion *@
-        <td style="width:20%">
+        <td style="width:20vw">
 
             <table class="w-100">
                 <tr>
 
-                    <td style="width:25%">
-                        <a href="#" class="icon" >
+                    <td style="width:33%">
+                        <a href="@INSTITUTION_LINK" target="_blank" class="icon" >
                             <img 
                                 src="/Images/Icons/Institution.svg" 
                                 title="Institution Homepage"    
@@ -75,8 +75,8 @@
                         </a>
                     </td>
 
-                    <td style="width:25%">
-                        <a href="#">
+                    <td style="width:34%">
+                        <a href="@INSTA_LINK" target="_blank" class="icon">
                             <img 
                                 src="/Images/Icons/Instagram.svg" 
                                 title="Our Instagram"    
@@ -84,23 +84,14 @@
                         </a>
                     </td>
 
-                    <td style="width:25%">
-                        <a href="#">
+                    <td style="width:33%">
+                        <a href="@EMAIL_LINK" target="_blank" class="icon">
                             <img 
                                 src="/Images/Icons/Email.svg" 
                                 title="Email us"    
                             />
                         </a>
                     </td>
-
-                    <td style="width:25%">
-                        <a href="#">
-                            <img 
-                                src="/Images/Icons/Snapchat.svg" 
-                                title="Our Snapchat"    
-                            />
-                        </a>
-                    </td>  
                     
                 </tr>
             </table>
@@ -108,9 +99,9 @@
         </td>
 
         @* Miscellanious portion *@
-        <td style="width:13%; text-align-last:center">
+        <td style="width:22vw; text-align-last:center">
 
-            <a href="" class="to-top" @onclick=ToTop> <b>BACK TO TOP</b> </a>
+            <a class="to-top" @onclick=ToTop> <b>BACK TO TOP</b> </a>
             <br />
             <br />
             <text class="est">Proudly Est. 2003</text>
@@ -126,6 +117,20 @@
 
 @code {
 
+    // Address of the current main workout location
+    private readonly string ADDRESS_LINK = "https://www.google.com/maps/place/Recreational+Sports+Center/@30.7116275,-95.5466428,19.67z/data=!4m6!3m5!1s0x8647089687cae18b:0x32009323b39dba61!8m2!3d30.71173!4d-95.5465886!16s%2Fg%2F11bx1bfwkb?entry=ttu";
+
+    // Link to the SHSU institution home page
+    private readonly string INSTITUTION_LINK = "https://shsu.edu/";
+
+    // Link to the shsu.powerlifting... email account
+    private readonly string EMAIL_LINK = "https://mail.google.com/mail/?view=cm&fs=1&to=shsu.powerlifting@gmail.com";
+
+    // Link to the shus_powerlifting instagram account
+    private readonly string INSTA_LINK = "https://www.instagram.com/shsu_powerlifting/";
+
+
+    // Returns the user to the top of the current page
     private async void ToTop()
     {
         await JsRuntime.InvokeVoidAsync("BackToTop");
